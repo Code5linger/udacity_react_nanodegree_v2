@@ -1,3 +1,4 @@
+import { ReactComponent } from "*.svg";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 /*
@@ -737,6 +738,7 @@ function App() {
 }
 ReactDOM.render(<App />, document.getElementById("root"));
 */
+/*
 import "./myStyles.css";
 
 const testData = [
@@ -792,3 +794,104 @@ ReactDOM.render(
   <App title="The GitHub Cards App" />,
   document.getElementById("root")
 );
+*/
+
+import "./myStyles.css";
+
+class Card extends React.Component {
+  render() {
+    return (
+      <div className="github-profile">
+        <img src="#" alt="Placeholder" />
+        <div className="Info">
+          <div className="name">Name Goes Here ...</div>
+          <div className="company">Company Here ...</div>
+        </div>
+      </div>
+    );
+  }
+}
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className="header">{this.props.title}</div>,
+        <Card />
+      </div>
+    );
+  }
+}
+ReactDOM.render(
+  <App title="The GitHub Cards App" />,
+  document.getElementById("root")
+);
+
+
+/*
+const App = ({ title }) => {
+  return <div className="header">{title}</div>;
+};
+ReactDOM.render(
+  <App title="GitHub Card App" />,
+  document.getElementById("root")
+);
+*/
+/*
+const App = ({ title }) => {
+  return <div className="header">{title}</div>;
+};
+ReactDOM.render(
+  <App title="GitHub Card App" />,
+  document.getElementById("root")
+);
+*/
+/*
+const App = ({ title }) => {
+  return <div className="header">{title}</div>;
+};
+ReactDOM.render(
+  <App title="GitHub Card App" />,
+  document.getElementById("root")
+);
+*/
+/*
+const App = ({ title }) => {
+  return <div className="header">{title}</div>;
+};
+ReactDOM.render(
+  <App title="GitHub Card App 3" />,
+  document.getElementById("root")
+);
+*/
+/*
+const App = ({ title }) => {
+  return <div className="header">{title}</div>;
+};
+ReactDOM.render(
+  <App title="The GitHub Card App 4" />,
+  document.getElementById("root")
+);
+*/
+/*
+const App = ({ title }) => {
+  return <div className="header">{title}</div>;
+};
+ReactDOM.render(
+  <App title="The GitHub Card App 4" />,
+  document.getElementById("root")
+);
+*/
+/*
+import "./myStyles.css";
+
+class App extends React.Component {
+  render() {
+    return <div className="header">{this.props.title}</div>;
+  }
+}
+ReactDOM.render(
+  <App title="GitHub Card App" />,
+  document.getElementById("root")
+);
+*/
