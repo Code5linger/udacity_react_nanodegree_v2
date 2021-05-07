@@ -795,7 +795,7 @@ ReactDOM.render(
   document.getElementById("root")
 );
 */
-
+/*
 import "./myStyles.css";
 
 class Card extends React.Component {
@@ -826,7 +826,7 @@ ReactDOM.render(
   <App title="The GitHub Cards App" />,
   document.getElementById("root")
 );
-
+*/
 
 /*
 const App = ({ title }) => {
@@ -882,9 +882,9 @@ ReactDOM.render(
   document.getElementById("root")
 );
 */
-/*
-import "./myStyles.css";
 
+//import "./components/myStyles.css";
+/*
 class App extends React.Component {
   render() {
     return <div className="header">{this.props.title}</div>;
@@ -895,3 +895,8 @@ ReactDOM.render(
   document.getElementById("root")
 );
 */
+const App = ({ title }) => {
+  return <div className="header">{title}</div>;
+};
+
+ReactDOM.render(<App />, document.getElementById("root"));
